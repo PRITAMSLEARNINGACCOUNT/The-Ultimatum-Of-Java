@@ -3,3 +3,6 @@
 *.iml
 *Documentation/
 *Documentation_2_Generated_With_CommandLine
+*Practice Problem 1/
+*.txt
+Chapter_16/Practice Set/MultiplicationTable.txt
