@@ -1,5 +1,3 @@
-package W02;
-
 import java.util.*;
 
 class Student {
@@ -15,7 +13,7 @@ class Student {
     }
 
     public void displayInfo() {
-        System.out.println("W02.Student Name: " + name);
+        System.out.println("Student Name: " + name);
         System.out.println("Age: " + age);
         System.out.print("Grade: " + grade);
     }
