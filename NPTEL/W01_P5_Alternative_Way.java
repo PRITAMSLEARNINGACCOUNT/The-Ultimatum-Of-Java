@@ -1,0 +1,4 @@
+package PACKAGE_NAME;
+
+public class W01_P5_Alternative_Way {
+}
