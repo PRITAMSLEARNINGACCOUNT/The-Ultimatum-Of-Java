@@ -1,19 +1,27 @@
-interface TestInterface {
-    // Public Access Modifier By Default
-    void testMethod();
+interface Calculator {
+    void calculate(int value);
 }
-class Test implements TestInterface {
-    @Override
-    // Default Access Modifier By Default
-    // Access Modifier Problem Occurs Default vs Public
-    void testMethod() {
-        // TODO Auto-generated method stub
-        System.out.println("Test Method");
+
+class Square implements Calculator {
+    int result;
+
+    public void calculate(int value) {
+        result = value * value;
+        System.out.print("Square: " + result + " ");
     }
-    
 }
+
+class Cube extends Square {
+    public void calculate(int value) {
+        result = value * value * value;
+        super.calculate(value);
+        System.out.print("Cube: " + result + " ");
+    }
+}
+
 public class Experiment {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        Calculator obj = new Cube();
+        obj.calculate(3);
     }
 }

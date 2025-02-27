@@ -8,20 +8,10 @@ class B implements GCD {
 
     @Override
     public int findGCD(int n1, int n2) {
-        // int n1,n2;
-
-        // if(n1==0&& n2==0) {
-        // #___________
-        // }
-        // else if(n2 == 0){
-        // #___________
-        // }
-
-        // else {
-        // return findGCD(//#___________);
-        // }
-        // }
-        // }
+        if (n2 == 0) {
+            return n1;
+        }
+        return findGCD(n2, n1 % n2);
     }
 }
 
